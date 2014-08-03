@@ -1,11 +1,19 @@
 /* BASE */
 
-* {
+/** {
 	padding: 0;
 	margin: 0;
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
 }
 
 .clearfix:before,
@@ -20,25 +28,13 @@
 
 .clearfix {
   *zoom: 1;
-}
-
-html,
-body {
-	height: 100%;
-	padding: 0;
-	margin: 0;
-	-webkit-font-smoothing: antialiased;
-}
+}*/
 
 /* -----------------------------------------REUSE */
 
-.container {
+/*.container {
 	max-width: 42.75%;
 	margin: 0 auto;
-}
-
-.center {
-	text-align: center;
 }
 
 .halfsies {
@@ -68,13 +64,13 @@ body {
 	margin: 0 1.5%;
 	display: inline-block;
 	float: left;
-}
+}*/
 
 /* ---------------------------------------//REUSE */
 
 /* --------------------------------------NAVIGATION */
 
-.header_nav {
+/*.header_nav {
 	background-color: #202020;
 	color: #fff;
 	text-align: center;
@@ -114,13 +110,13 @@ nav ul li a {
 .lefty {
 	border-left: 1px dashed white;
 	padding: 18px 0;
-}
+}*/
 
 /* ------------------------------------//NAVIGATION */
 
 /* --------------------------------------TYPOGRAPHY */
 
-a {
+/*a {
 	text-decoration: none;
 }
 
@@ -319,7 +315,7 @@ a {
 	font-size: 2.25em;
 	position: relative;
 	top: 5px;
-}
+}*/
 
 /* ------------------------------------//TYPOGRAPHY */
 
@@ -365,7 +361,7 @@ a {
 
 /* ------------------------------------------//IMAGES */
 
-/* ---------------------------------BANNERS & BUTTONS */
+ ---------------------------------BANNERS & BUTTONS 
 
 #start_banner1 {
 	margin: 0 0 35px 300px;
@@ -406,7 +402,7 @@ a {
 
 /* --------------------------------------------SECTIONS */
 
-.header_section {
+/*.header_section {
 	background-color: #f4614c;
 }
 
@@ -497,15 +493,15 @@ a {
 
 .footer_section {
 	background-color: #202020;
-}
+}*/
 
 /* -------------------------------------------//SECTIONS */
 
 /* ------------------------------------------------FORMS */
 
-.some_form {
+/*.some_form {
 	width: 222px;
 	height: 40px;
-}
+}*/
 
 /* ----------------------------------------------//FORMS */

@@ -1,0 +1,48 @@
+@mixin container { 
+	max-width: 42.75%;
+	margin: 0 auto;
+}
+
+@mixin thirds {
+	width: 30%;
+	margin: 0 1.5%;
+	display: inline-block;
+	float: left;
+}
+
+@mixin padding18 {
+	padding: 18px 0;
+}
+
+@mixin transition {
+	-webkit-transition: .5s ease;
+	   -moz-transition: .5s ease;
+	    -ms-transition: .5s ease;
+	     -o-transition: .5s ease;
+	        transition: .5s ease;
+}
+
+@mixin clearfix {
+	.clearfix:before,
+	.clearfix:after {
+	  content: " "; 
+	  display: table;
+	}
+
+	.clearfix:after {
+	  clear: both;
+	}
+
+	.clearfix {
+	  *zoom: 1;
+	}
+}
+
+@mixin gills {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-weight: 500;
+}
+
+@mixin neue {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
