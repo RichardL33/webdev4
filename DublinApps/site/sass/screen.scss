@@ -1,0 +1,564 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "compass/css3";
+
+@include font-face("alexreg", font-files("alexandriaflf-webfont.woff", "alexandriaflf-webfont.ttf", "alexandriaflf-webfont.svg"), "alexandriaflf-webfont.eot");
+@include font-face("alexmedit", font-files("alexandriaflf-italic-webfont.woff", "alexandriaflf-italic-webfont.ttf", "alexandriaflf-italic-webfont.svg"), "alexandriaflf-italic-webfont.eot");
+@include font-face("alexbold", font-files("alexandriaflf-bold-webfont.woff", "alexandriaflf-bold-webfont.ttf", "alexandriaflf-bold-webfont.svg"), "alexandriaflf-bold-webfont.eot");
+@include font-face("alexboldit", font-files("alexandriaflf-bolditalic-webfont.woff", "alexandriaflf-bolditalic-webfont.ttf", "alexandriaflf-bolditalic-webfont.svg"), "alexandriaflf-bolditalic-webfont.eot");
+@include font-face("colabreg", font-files("colabreg-webfont.woff", "colabreg-webfont.ttf", "colabreg-webfont.svg"), "colabreg-webfont.eot");
+@include font-face("colabthin", font-files("colabthi-webfont.woff", "colabthi-webfont.ttf", "colabthi-webfont.svg"), "colabthi-webfont.eot");
+@include font-face("colablight", font-files("colablig-webfont.woff", "colablig-webfont.ttf", "colablig-webfont.svg"), "colablig-webfont.eot");
+@include font-face("colabmed", font-files("colabmed-webfont.woff", "colabmed-webfont.ttf", "colabmed-webfont.svg"), "colabmed-webfont.eot");
+@include font-face("colabbol", font-files("colabbol-webfont.woff", "colabbol-webfont.ttf", "colabbol-webfont.svg"), "colabbol-webfont.eot");
+@include font-face("flare", font-files("flare-light-gothic-webfont.woff", "flare-light-gothic-webfont.ttf", "flare-light-gothic-webfont.svg"), "flare-light-gothic-webfont.eot");
+@include font-face("frankgoth", font-files("franklingothic-book-webfont.woff", "franklingothic-book-webfont.ttf", "franklingothic-book-webfont.svg"), "franklingothic-book-webfont.eot");
+@include font-face("contrareg", font-files("contra__-webfont.woff", "contra__-webfont.ttf", "contra__-webfont.svg"), "contra__-webfont.eot");
+@include font-face("contrait", font-files("contrai_-webfont.woff", "contrai_-webfont.ttf", "contrai_-webfont.svg"), "contrai_-webfont.eot");
+@include font-face("chunk", font-files("chunkfive-webfont.woff", "chunkfive-webfont.ttf", "chunkfive-webfont.svg"), "chunkfive-webfont.eot");
+
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	background-image: -webkit-gradient(
+	linear,
+	left top,
+	left bottom,
+	color-stop(0, #1B1B2D),
+	color-stop(0.29, #E7E8EA),
+	color-stop(0.46, #FFFFFF) );
+	background-image: -o-linear-gradient(bottom, #1B1B2D 0%, #E7E8EA 29%, #FFFFFF 46%);
+	background-image: -moz-linear-gradient(bottom, #1B1B2D 0%, #E7E8EA 29%, #FFFFFF 46%);
+	background-image: -webkit-linear-gradient(bottom, #1B1B2D 0%, #E7E8EA 29%, #FFFFFF 46%);
+	background-image: -ms-linear-gradient(bottom, #1B1B2D 0%, #E7E8EA 29%, #FFFFFF 46%);
+	background-image: linear-gradient(to bottom, #1B1B2D 0%, #E7E8EA 29%, #FFFFFF 46%);
+	font-size: 62.5%;
+}
+
+h1,
+h2,
+h3 {
+	padding: 0;
+	margin: 0;
+}
+
+.large_container {
+	@include clearfix;
+	max-width: 74%;
+	margin: 0 auto
+}
+
+.main_container {
+	@include clearfix;
+	max-width: 93%;
+	margin: 0 auto;
+}
+
+.inner_container {
+	@include clearfix;
+	width: 67%;
+}
+
+.small_inner_container {
+	@include clearfix;
+	width: 85%;
+	margin: 0 auto;
+}
+
+.nine_sixty {
+	@include clearfix;
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.header_section {
+	@include clearfix;
+	position: relative;
+}
+
+.margright {
+	margin-right: 2.65%;
+}
+
+.margright1 {
+	margin-right: 1%;
+}
+
+.margright2 {
+	margin-right: 2%;
+}
+
+.margbottom10 {
+	margin-bottom: 15px;
+}
+
+
+.hero {
+	width: 61%;
+	float: right;
+}
+
+.section_one {
+	@include clearfix;
+	margin-top: 60px;
+	position: relative;
+	.section_one_text {
+		width: 35%;
+		float: left;
+		text-align: right;
+		margin-top: 45px;
+	}
+	h1 {
+		font-family: 'chunk';
+	}
+	h2 {
+		font-family: 'alexreg';
+	}
+	h3 {
+		font-family: 'colabthin';
+	}
+	.section_one_text span {
+		font-family: 'alexbold';
+	}
+}
+
+.section_two {
+	@include clearfix;
+	text-align: center;
+	img {
+		@include fourths;
+	}
+}
+
+.section_three {
+	@include clearfix;
+	font-family: 'colablight';
+	float: left;
+	margin: 40px auto;
+	text-align: center;
+		.thirds {
+			@include thirds;
+			h1 {
+				color: $primary-color;
+			}
+			h2 {
+				color: $secondary-color;
+			}
+		}
+		.section_three_b_h2 {
+			color: $primary-color;
+			font-size: 1.4rem;
+			text-align: left;
+		}
+		.sec_three_a_h1 {
+			color: $primary-color;
+			font-size: 2.5rem;
+		}
+		.section_three_a_h2 {
+			h2 {
+				color: $secondary-color;
+			}
+		}
+	}
+
+.section_four {
+	@include clearfix;
+	padding: 20px 0;
+	margin: 0 auto;
+	text-align: center;
+	h2 {
+		font-size: 1.6rem;
+		color: $darker-grey;
+		width: 77.80;
+		margin: auto;
+	}
+}
+
+.section_five {
+	@include clearfix;
+	color: $darker-grey;
+	font-family: 'colablight';
+	nav ul li {
+		list-style-type: none;
+		margin: 10px 0;
+	}
+	.section_five_header {
+		margin: 0 auto;
+		width: 46%;
+		h1 {
+			color: $primary-color;
+			font-size: 2.7rem;
+		}
+		h2 {
+			color: $secondary-color;
+			font-size: 1.5rem;
+		}
+		h3 {
+			font-size: 1.5rem;
+		}
+	}
+	.small_inner_container {
+		@include clearfix;
+		.halfsies {
+			@include halfsies;
+		}
+	}
+	.section_five_bottom nav ul li {
+		@include clearfix;
+		list-style-type: none;
+		padding: 10px 0;
+		border-top: 1px solid #d7d8da;
+	}
+	.section_five_bottom {
+		@include clearfix;
+		margin: 30px 0;
+	}
+	.section_five_play {
+		@include clearfix;
+		margin-top: 40px;
+		a {
+			font-family: 'colabreg';
+		}
+		h2 {
+			width: 120%;
+			padding-left: 10px;
+		}
+	}	
+}
+
+.footer_section {
+	@include clearfix;
+	background: rgb(82,82,104); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMjMlIiBzdG9wLWNvbG9yPSIjNTI1MjY4IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNzclIiBzdG9wLWNvbG9yPSIjMzUzNTQ2IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNzclIiBzdG9wLWNvbG9yPSIjMzUzNTQ2IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(82,82,104,1) 23%, rgba(53,53,70,1) 77%, rgba(53,53,70,1) 77%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(23%,rgba(82,82,104,1)), color-stop(77%,rgba(53,53,70,1)), color-stop(77%,rgba(53,53,70,1))); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(82,82,104,1) 23%,rgba(53,53,70,1) 77%,rgba(53,53,70,1) 77%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover, rgba(82,82,104,1) 23%,rgba(53,53,70,1) 77%,rgba(53,53,70,1) 77%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover, rgba(82,82,104,1) 23%,rgba(53,53,70,1) 77%,rgba(53,53,70,1) 77%); /* IE10+ */
+	background: radial-gradient(ellipse at center, rgba(82,82,104,1) 23%,rgba(53,53,70,1) 77%,rgba(53,53,70,1) 77%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#525268', endColorstr='#353546',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+	padding-bottom: 20px; 
+	.footer_section_top {
+		border-bottom: 1px solid #59596c;
+		padding: 15px 0px;
+		position: relative;
+		h2 {
+			font-family: 'contrareg';
+			font-size: 1.3rem;
+			line-height: 25.01px;
+			color: $white;
+			width: 75%;
+			margin: 0 auto;
+		}
+		h3 {
+			font-family: 'contrait';
+			font-size: 1.5rem;
+			color: $white;
+			float: right;
+		}
+	}
+	.news_section {
+		@include clearfix;
+		.newsletter {
+			@include clearfix;
+			@include halfsies;
+			@include clearfix;
+			float: left;
+			h1 {
+				font-family: 'colablight';
+				font-size: 2.5rem;
+				color: $white;
+				padding: 20px 0;
+			}
+			h2 {
+				font-family: 'colabthin';
+				font-size: 1.4rem;
+				color: #fff;
+				line-height: 20.01px;
+				width: 100%;
+				margin-bottom: 20px;
+			}
+		}
+	}
+	.contact_form {
+		@include clearfix;
+		float: right;
+		width: 43%;
+		h1 {
+			font-family: 'colablight';
+			font-size: 2.5rem;
+			color: $white;
+			padding: 20px 0
+		}
+		.left_contact {
+			@include clearfix;
+			float: left;
+		}
+	}
+	.copyright {
+		font-family: 'colablight';
+		font-size: 1.4rem;
+		color: #8e8e95;
+		position: absolute;
+		bottom: 0;
+		text-align: center;
+		margin:  auto;
+		width: 100%
+	}
+}
+
+#form_text2 {
+	width: 215px;
+	height: 25px;
+	background-color: $form-text;
+	border: none;
+	padding: 10px 30px 10px 20px;
+	border-radius: 5px;
+	font-size: 1.4rem;
+	color: #5b5c68;
+}
+
+.margbottom10 {
+	margin-bottom: 15px;
+}
+
+/* IMAGES */
+
+#logo {
+	padding-top: 40px;
+	width: 4%;
+	float: left;
+}
+
+#button_shadow {
+	padding-top: 30px;
+	padding-right: 10px;
+}
+
+.icons {
+	width: 13%;
+	float: left;
+}
+
+#large_twitter {
+	float: left;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-top: 10px;
+}
+
+/* //IMAGES */
+
+/* TYPE */
+
+.text_wrap {
+	float: left;
+	width: 85%;
+	text-align: left;
+	margin-left: 2%;
+}
+
+.logo_text {
+	max-width: 24%;
+	float: left;
+	padding-left: 8px;
+	padding-top: 34px;
+}
+
+.logo_head {
+	font-size: 3.9rem;
+	color: #fff;
+}
+
+.logo_sub_head {
+	font-size: 1.7rem;
+	color: $white;
+}
+
+.top_nav {
+	position: absolute;
+	right: 0;
+	top: 40px;
+}	
+
+.top_nav {
+	ul li {
+		list-style: none;
+		display: inline-block;
+		margin: 0 8px;
+		a {
+			font-size: 1.7rem;
+			color: $white;
+			text-decoration: none;
+			padding: 4px 10px;
+			border: none;
+			&:hover {
+				@include nav_hover;
+				background-color: $nav-background;
+				color: $nav-text;
+				border-radius: 0.25em;
+				border: none;
+				margin: 0;
+			}
+		}
+	}
+}
+
+#dublins_text {
+	width: 61%;
+	float: right;
+}
+
+.dublins {
+	font-size: 4.5rem;
+	color: $main-grey;
+}
+
+.hero_h2 {
+	font-size: 3.9rem;
+	color: $main-grey;
+	font-weight: 300;
+}
+
+.hero_h3 {
+	font-size: 2.3rem;
+	color: $main-grey;
+	font-weight: 300;
+}
+
+/* //TYPE */
+
+/* BUTTONS */
+
+#blue_button {
+    background-image: -webkit-gradient(
+	linear,
+	left top,
+	left bottom,
+	color-stop(0, #2D6BC2),
+	color-stop(0.48, #174284)
+	);
+    background-image: -o-linear-gradient(bottom, #2D6BC2 0%, #174284 48%);
+    background-image: -moz-linear-gradient(bottom, #2D6BC2 0%, #174284 48%);
+    background-image: -webkit-linear-gradient(bottom, #2D6BC2 0%, #174284 48%);
+    background-image: -ms-linear-gradient(bottom, #2D6BC2 0%, #174284 48%);
+    background-image: linear-gradient(to bottom, #2D6BC2 0%, #174284 48%);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    color: $white;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #6e9ad8;
+	text-align: center;
+}
+
+#blue_button:hover {
+    border: none;
+    color: #161628;
+    background: #d2d2d6;
+    -webkit-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;  
+}
+
+.section_one_text a {
+	text-decoration: none;
+}
+
+.hero_button {
+	margin-top: 35px;
+	padding: 10px 5%;
+	font-size: 2.3rem;
+	font-family: 'colaborate-medium';
+}
+
+.read_button {
+	padding: 5px 22px;
+	float: left;
+	font-size: 1.9rem;
+	margin-left: 5%;
+	margin-top: 20px;
+}
+
+.download_button {
+	padding: 5px 28px;
+	float: left;
+	font-size: 1.9rem;
+	margin-top: 20px;
+}
+
+#left_arrow1{
+	left: 0;
+}
+#right_arrow1 {
+	right: 0;
+}
+
+#left_arrow1,
+#right_arrow1 {
+	position: absolute;
+	top: 130px;
+}
+
+#left_arrow2 {
+	float: left;
+}
+
+#right_arrow2 {
+	float: right;
+}
+
+#play_button {
+	float: left;
+}
+
+#plus_button {
+	float: left;
+	padding-right: 10px;
+}
+
+.some_form {
+	background-color: $form-text;
+	border: none;
+	padding: 10px 30px 10px 20px;
+	width: 230px;
+	height: 35px;
+	border-radius: 5px;
+	font-size: 1.4rem;
+	color: #5b5c68;
+	margin-bottom: 20px;
+}
+
+#comments_text {
+	background-color: $form-text;
+	border: none;
+	padding: 10px 30px 10px 20px;
+	width: 185px;
+	height: 105px;
+	border-radius: 5px;
+	font-size: 1.4rem;
+	color: #5b5c68;
+	margin-bottom: 20px;
+	float: right;
+}
+
+/* //BUTTONS */
