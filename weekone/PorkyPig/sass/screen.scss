@@ -194,8 +194,6 @@ nav ul li {
 }
 
 .container_wrap {
-	@include container;
-	@include clearfix;
 
 	h1 {
 		@include gills;

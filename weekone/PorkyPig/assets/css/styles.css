@@ -1,6 +1,6 @@
 /* BASE */
 
-/** {
+* {
 	padding: 0;
 	margin: 0;
 	-webkit-box-sizing: border-box;
@@ -28,11 +28,11 @@ body {
 
 .clearfix {
   *zoom: 1;
-}*/
+}
 
 /* -----------------------------------------REUSE */
 
-/*.container {
+.container {
 	max-width: 42.75%;
 	margin: 0 auto;
 }
@@ -64,13 +64,13 @@ body {
 	margin: 0 1.5%;
 	display: inline-block;
 	float: left;
-}*/
+}
 
 /* ---------------------------------------//REUSE */
 
 /* --------------------------------------NAVIGATION */
 
-/*.header_nav {
+.header_nav {
 	background-color: #202020;
 	color: #fff;
 	text-align: center;
@@ -110,13 +110,13 @@ nav ul li a {
 .lefty {
 	border-left: 1px dashed white;
 	padding: 18px 0;
-}*/
+}
 
 /* ------------------------------------//NAVIGATION */
 
 /* --------------------------------------TYPOGRAPHY */
 
-/*a {
+a {
 	text-decoration: none;
 }
 
@@ -315,7 +315,7 @@ nav ul li a {
 	font-size: 2.25em;
 	position: relative;
 	top: 5px;
-}*/
+}
 
 /* ------------------------------------//TYPOGRAPHY */
 
@@ -361,7 +361,7 @@ nav ul li a {
 
 /* ------------------------------------------//IMAGES */
 
- ---------------------------------BANNERS & BUTTONS 
+/* ---------------------------------BANNERS & BUTTONS */
 
 #start_banner1 {
 	margin: 0 0 35px 300px;
@@ -402,7 +402,7 @@ nav ul li a {
 
 /* --------------------------------------------SECTIONS */
 
-/*.header_section {
+.header_section {
 	background-color: #f4614c;
 }
 
@@ -493,15 +493,15 @@ nav ul li a {
 
 .footer_section {
 	background-color: #202020;
-}*/
+}
 
 /* -------------------------------------------//SECTIONS */
 
 /* ------------------------------------------------FORMS */
 
-/*.some_form {
+.some_form {
 	width: 222px;
 	height: 40px;
-}*/
+}
 
 /* ----------------------------------------------//FORMS */
