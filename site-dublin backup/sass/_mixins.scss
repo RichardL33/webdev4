@@ -1,0 +1,39 @@
+// MIXINS
+
+@mixin clearfix {
+	.clearfix:before,
+	.clearfix:after {
+	  content: " "; 
+	  display: table;
+	}
+
+	.clearfix:after {
+	  clear: both;
+	}
+
+	.clearfix {
+	  *zoom: 1;
+	}	
+}
+
+@mixin halfsies {
+	width: 50%;
+	float: left; 
+}
+
+@mixin thirds {
+	width: 32%;
+	float: left;
+}
+
+@mixin fourths {
+	width: 23%;
+	float: left;
+}
+
+@mixin easing {
+	-webkit-transition: all .5s ease ;
+	-moz-transition: all .5s ease ;
+	-o-transition: all .5s ease ;
+	transition: all .5s ease ;
+}
