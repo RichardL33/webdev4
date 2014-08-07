@@ -1,0 +1,37 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	background-image: -webkit-gradient(
+	linear,
+	left top,
+	left bottom,
+	color-stop(0, #1B1B2D),
+	color-stop(0.29, #E7E8EA),
+	color-stop(0.46, #FFFFFF) );
+	background-image: -o-linear-gradient(bottom, #1B1B2D 0%, #E7E8EA 29%, #FFFFFF 46%);
+	background-image: -moz-linear-gradient(bottom, #1B1B2D 0%, #E7E8EA 29%, #FFFFFF 46%);
+	background-image: -webkit-linear-gradient(bottom, #1B1B2D 0%, #E7E8EA 29%, #FFFFFF 46%);
+	background-image: -ms-linear-gradient(bottom, #1B1B2D 0%, #E7E8EA 29%, #FFFFFF 46%);
+	background-image: linear-gradient(to bottom, #1B1B2D 0%, #E7E8EA 29%, #FFFFFF 46%);
+	font-size: 62.5%;
+}
+
+h1,
+h2,
+h3 {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
