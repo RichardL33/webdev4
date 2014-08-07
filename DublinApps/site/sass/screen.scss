@@ -87,11 +87,6 @@ h3 {
 	position: relative;
 }
 
-.header_section {
-	@include clearfix;
-	position: relative;
-}
-
 .margright {
 	margin-right: 2.65%;
 }
@@ -108,6 +103,55 @@ h3 {
 	margin-bottom: 15px;
 }
 
+.header_section {
+	@include clearfix;
+	position: relative;
+	.logo_section {
+		.logo_text {
+			max-width: 24%;
+			float: left;
+			padding-left: 8px;
+			padding-top: 23px;
+			h1 {
+				font-family: 'flare';
+				font-size: 3.9rem;
+				color: #fff;
+			}
+			h2 {
+				font-family: 'frankgoth';
+				font-size: 1.7rem;
+				color: $white;
+				padding-top: 14px;
+			}
+		}
+	}
+	.top_nav {
+		font-family: 'colablight';
+		position: absolute;
+		right: 0;
+		top: 40px;
+		ul li {
+			list-style: none;
+			display: inline-block;
+			margin: 0 8px;
+			a {
+				font-size: 1.7rem;
+				color: $white;
+				text-decoration: none;
+				padding: 4px 10px;
+				border: none;
+				&:hover {
+					@include easing;
+					background-color: $nav-background;
+					color: $nav-text;
+					border-radius: 0.25em;
+					border: none;
+					margin: 0;
+				}
+			}
+		}
+	}
+}
 
 .hero {
 	width: 61%;
@@ -123,6 +167,9 @@ h3 {
 		float: left;
 		text-align: right;
 		margin-top: 45px;
+		a {
+			text-decoration: none;
+		}
 	}
 	h1 {
 		font-family: 'chunk';
@@ -152,40 +199,43 @@ h3 {
 	float: left;
 	margin: 40px auto;
 	text-align: center;
-		.thirds {
-			@include thirds;
-			h1 {
+	.thirds {
+		@include thirds;
+		.section_three_a {
+			.text_wrap {
+				h1 {
+					color: $primary-color;
+					font-size: 2.5rem;
+				}
+				h2 {
+					color: $secondary-color;
+					font-size: 1.5rem;
+				}
+			}
+		}
+		.section_three_b {
+			h2 {
 				color: $primary-color;
-			}
-			h2 {
-				color: $secondary-color;
-			}
-		}
-		.section_three_b_h2 {
-			color: $primary-color;
-			font-size: 1.4rem;
-			text-align: left;
-		}
-		.sec_three_a_h1 {
-			color: $primary-color;
-			font-size: 2.5rem;
-		}
-		.section_three_a_h2 {
-			h2 {
-				color: $secondary-color;
+				font-size: 1.4rem;
+				line-height: 20.01px;
+				text-align: left;
+				margin-top: 63px;
 			}
 		}
 	}
+}
 
 .section_four {
 	@include clearfix;
+	font-family: 'contrareg';
 	padding: 20px 0;
-	margin: 0 auto;
+	margin: 40px auto;
 	text-align: center;
 	h2 {
 		font-size: 1.6rem;
+		line-height: 25.01px;
 		color: $darker-grey;
-		width: 77.80;
+		width: 77.80%;
 		margin: auto;
 	}
 }
@@ -194,10 +244,6 @@ h3 {
 	@include clearfix;
 	color: $darker-grey;
 	font-family: 'colablight';
-	nav ul li {
-		list-style-type: none;
-		margin: 10px 0;
-	}
 	.section_five_header {
 		margin: 0 auto;
 		width: 46%;
@@ -209,37 +255,45 @@ h3 {
 			color: $secondary-color;
 			font-size: 1.5rem;
 		}
-		h3 {
-			font-size: 1.5rem;
-		}
 	}
 	.small_inner_container {
 		@include clearfix;
 		.halfsies {
 			@include halfsies;
+			.section_five_play {
+				@include clearfix;
+				margin-top: 40px;
+				nav {
+					margin-bottom: 20px;
+					ul li {
+						list-style-type: none;
+						margin: 10px 0;
+						a {
+							font-family: 'colabreg';
+						}
+					}
+					h2 {
+						width: 120%;
+						padding-left: 10px;
+						font-size: 1.5rem;
+					}
+				}	
+			}
 		}
-	}
-	.section_five_bottom nav ul li {
-		@include clearfix;
-		list-style-type: none;
-		padding: 10px 0;
-		border-top: 1px solid #d7d8da;
 	}
 	.section_five_bottom {
 		@include clearfix;
 		margin: 30px 0;
+		nav ul li {
+			@include clearfix;
+			list-style-type: none;
+			padding: 10px 0;
+			border-top: 1px solid #d7d8da;
+		}
+		h3 {
+			font-size: 1.5rem;
+		}
 	}
-	.section_five_play {
-		@include clearfix;
-		margin-top: 40px;
-		a {
-			font-family: 'colabreg';
-		}
-		h2 {
-			width: 120%;
-			padding-left: 10px;
-		}
-	}	
 }
 
 .footer_section {
@@ -279,7 +333,6 @@ h3 {
 		.newsletter {
 			@include clearfix;
 			@include halfsies;
-			@include clearfix;
 			float: left;
 			h1 {
 				font-family: 'colablight';
@@ -324,15 +377,15 @@ h3 {
 	}
 }
 
-#form_text2 {
+.form_text2 {
 	width: 215px;
 	height: 25px;
-	background-color: $form-text;
+	background-color: $form-field;
 	border: none;
 	padding: 10px 30px 10px 20px;
 	border-radius: 5px;
 	font-size: 1.4rem;
-	color: #5b5c68;
+	color: $form-field-text;
 }
 
 .margbottom10 {
@@ -376,52 +429,6 @@ h3 {
 	margin-left: 2%;
 }
 
-.logo_text {
-	max-width: 24%;
-	float: left;
-	padding-left: 8px;
-	padding-top: 34px;
-}
-
-.logo_head {
-	font-size: 3.9rem;
-	color: #fff;
-}
-
-.logo_sub_head {
-	font-size: 1.7rem;
-	color: $white;
-}
-
-.top_nav {
-	position: absolute;
-	right: 0;
-	top: 40px;
-}	
-
-.top_nav {
-	ul li {
-		list-style: none;
-		display: inline-block;
-		margin: 0 8px;
-		a {
-			font-size: 1.7rem;
-			color: $white;
-			text-decoration: none;
-			padding: 4px 10px;
-			border: none;
-			&:hover {
-				@include nav_hover;
-				background-color: $nav-background;
-				color: $nav-text;
-				border-radius: 0.25em;
-				border: none;
-				margin: 0;
-			}
-		}
-	}
-}
-
 #dublins_text {
 	width: 61%;
 	float: right;
@@ -448,7 +455,7 @@ h3 {
 
 /* BUTTONS */
 
-#blue_button {
+.blue_button {
     background-image: -webkit-gradient(
 	linear,
 	left top,
@@ -463,52 +470,61 @@ h3 {
     background-image: linear-gradient(to bottom, #2D6BC2 0%, #174284 48%);
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
-    border-radius:6px;
+    border-radius: 6px;
     color: $white;
     text-decoration: none;
     cursor: pointer;
     border: 1px solid #6e9ad8;
 	text-align: center;
+	&:hover {
+	    border: none;
+	    color: #161628;
+	    background: #d2d2d6;
+	    @include easing;
+	}
 }
 
-#blue_button:hover {
-    border: none;
-    color: #161628;
-    background: #d2d2d6;
-    -webkit-transition: .5s ease-in-out;
-    -o-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;  
-}
-
-.section_one_text a {
+.grey_button {
+	background-color: $main-grey;
+	color: $grey-button-text;
+	font-size: 1.4rem;
 	text-decoration: none;
+	cursor: pointer;
+	text-align: center;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 8px;
+	padding: 8px 16px;
+	margin-left: 16px;
+	border: 1px solid transparent;
 }
 
 .hero_button {
 	margin-top: 35px;
 	padding: 10px 5%;
 	font-size: 2.3rem;
-	font-family: 'colaborate-medium';
+	font-family: 'colabmed';
 }
 
 .read_button {
+	font-family: 'colabreg';
 	padding: 5px 22px;
 	float: left;
 	font-size: 1.9rem;
 	margin-left: 5%;
-	margin-top: 20px;
 }
 
 .download_button {
+	font-family: 'colabreg';
 	padding: 5px 28px;
 	float: left;
 	font-size: 1.9rem;
-	margin-top: 20px;
 }
 
 #left_arrow1{
 	left: 0;
 }
+
 #right_arrow1 {
 	right: 0;
 }
@@ -527,36 +543,41 @@ h3 {
 	float: right;
 }
 
-#play_button {
+.play_button {
 	float: left;
 }
 
-#plus_button {
+.plus_button {
 	float: left;
 	padding-right: 10px;
 }
 
+.email_submit {
+	width: 70%;
+}
+
 .some_form {
-	background-color: $form-text;
+	background-color: $form-field;
 	border: none;
 	padding: 10px 30px 10px 20px;
 	width: 230px;
 	height: 35px;
 	border-radius: 5px;
 	font-size: 1.4rem;
-	color: #5b5c68;
+	color: $form-field-text;
 	margin-bottom: 20px;
+	float: left;
 }
 
 #comments_text {
-	background-color: $form-text;
+	background-color: $form-field;
 	border: none;
 	padding: 10px 30px 10px 20px;
 	width: 185px;
 	height: 105px;
 	border-radius: 5px;
 	font-size: 1.4rem;
-	color: #5b5c68;
+	color: $form-field-text;
 	margin-bottom: 20px;
 	float: right;
 }
