@@ -8,17 +8,17 @@
 @import "compass/layout";
 @import "compass/utilities";
 @import "normalize";
-
 @import "breakpoint";
 @import "_partials/_breakpoints.scss";
 @import "_partials/_base_mixins.scss";
-@import "_partials/_decorators.scss";
+
+@include font-face("bebasneue", font-files("bebasneue-webfont.woff", "bebasneue-webfont.ttf", "bebasneue-webfont.svg"), "bebasneue-webfont.eot");
+@include font-face("pacifico", font-files("pacifico-webfont.woff", "pacifico-webfont.ttf", "pacifico-webfont.svg"), "pacifico-webfont.eot");
+
 
 $legacy-support-for-ie: false;
 $legacy-support-for-mozilla: false;
 
-@include font-face("bebasneue", font-files("bebasneue-webfont.woff", "bebasneue-webfont.ttf", "bebasneue-webfont.svg"), "bebasneue-webfont.eot");
-@include font-face("pacifico", font-files("pacifico-webfont.woff", "pacifico-webfont.ttf", "pacifico-webfont.svg"), "pacifico-webfont.eot");
 
 * {
 	@include box-sizing(border-box);
@@ -32,28 +32,10 @@ body {
 	@include breakpoint($bp-tablet-portrait) {
 		text-align: left;
 	}
-
-	figure {
-		@include breakpoint($bp-mobile-landscape) {
-			width: 440px;
-			height: 300px;
-		}
-		@include breakpoint($bp-tablet-portrait) {
-			margin: 0;
-			display: inline-block;
-			width: 250px;
-			height: 250px;
-		}
-	}
 }
 
-section,
-footer {
+section {
 	@extend %clearfix;
-}
-
-header {
-	position: static;
 }
 
 h1 {
@@ -68,6 +50,7 @@ img {
 }
 
 footer {
+	@extend %clearfix;
 	background-image: url('../images/snow_footer.png');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -84,14 +67,14 @@ footer {
 	@include breakpoint($bp-tablet-portrait) {
 		width: 90%; 
 		@include column-count(2);
-		@include sticky-footer(500px, ".container", ".root-footer", ".main-footer");
+		@include sticky-footer(150px, ".container", ".root-footer", ".main-footer");
 	}
 	@include breakpoint($bp-desktop) {
 		width: 80%; 
 		@include column-count(3);
 		@include column-gap(3em);
 		@include column-rule(1px solid #ccc);
-		@include sticky-footer(500px, ".container", ".root-footer", ".main-footer");
+		@include sticky-footer(150px, ".container", ".root-footer", ".main-footer");
 	}
 	 
 }
