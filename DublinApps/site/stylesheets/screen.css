@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,119 +24,133 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
 @font-face {
   font-family: "alexreg";
-  src: url('../fonts/alexandriaflf-webfont.eot?1406117054');
-  src: url('../fonts/alexandriaflf-webfont.eot?&1406117054#iefix') format('embedded-opentype'), url('../fonts/alexandriaflf-webfont.woff?1406117054') format('woff'), url('../fonts/alexandriaflf-webfont.ttf?1406117054') format('truetype'), url('../fonts/alexandriaflf-webfont.svg?1406117054') format('svg');
+  src: url('../fonts/alexandriaflf-webfont.eot');
+  src: url('../fonts/alexandriaflf-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/alexandriaflf-webfont.woff') format('woff'), url('../fonts/alexandriaflf-webfont.ttf') format('truetype'), url('../fonts/alexandriaflf-webfont.svg') format('svg');
 }
+
 @font-face {
   font-family: "alexmedit";
-  src: url('../fonts/alexandriaflf-italic-webfont.eot?1406117054');
-  src: url('../fonts/alexandriaflf-italic-webfont.eot?&1406117054#iefix') format('embedded-opentype'), url('../fonts/alexandriaflf-italic-webfont.woff?1406117054') format('woff'), url('../fonts/alexandriaflf-italic-webfont.ttf?1406117054') format('truetype'), url('../fonts/alexandriaflf-italic-webfont.svg?1406117054') format('svg');
+  src: url('../fonts/alexandriaflf-italic-webfont.eot');
+  src: url('../fonts/alexandriaflf-italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/alexandriaflf-italic-webfont.woff') format('woff'), url('../fonts/alexandriaflf-italic-webfont.ttf') format('truetype'), url('../fonts/alexandriaflf-italic-webfont.svg') format('svg');
 }
+
 @font-face {
   font-family: "alexbold";
-  src: url('../fonts/alexandriaflf-bold-webfont.eot?1406117054');
-  src: url('../fonts/alexandriaflf-bold-webfont.eot?&1406117054#iefix') format('embedded-opentype'), url('../fonts/alexandriaflf-bold-webfont.woff?1406117054') format('woff'), url('../fonts/alexandriaflf-bold-webfont.ttf?1406117054') format('truetype'), url('../fonts/alexandriaflf-bold-webfont.svg?1406117054') format('svg');
+  src: url('../fonts/alexandriaflf-bold-webfont.eot');
+  src: url('../fonts/alexandriaflf-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/alexandriaflf-bold-webfont.woff') format('woff'), url('../fonts/alexandriaflf-bold-webfont.ttf') format('truetype'), url('../fonts/alexandriaflf-bold-webfont.svg') format('svg');
 }
+
 @font-face {
   font-family: "alexboldit";
-  src: url('../fonts/alexandriaflf-bolditalic-webfont.eot?1406117054');
-  src: url('../fonts/alexandriaflf-bolditalic-webfont.eot?&1406117054#iefix') format('embedded-opentype'), url('../fonts/alexandriaflf-bolditalic-webfont.woff?1406117054') format('woff'), url('../fonts/alexandriaflf-bolditalic-webfont.ttf?1406117054') format('truetype'), url('../fonts/alexandriaflf-bolditalic-webfont.svg?1406117054') format('svg');
+  src: url('../fonts/alexandriaflf-bolditalic-webfont.eot');
+  src: url('../fonts/alexandriaflf-bolditalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/alexandriaflf-bolditalic-webfont.woff') format('woff'), url('../fonts/alexandriaflf-bolditalic-webfont.ttf') format('truetype'), url('../fonts/alexandriaflf-bolditalic-webfont.svg') format('svg');
 }
+
 @font-face {
   font-family: "colabreg";
-  src: url('../fonts/colabreg-webfont.eot?1406117054');
-  src: url('../fonts/colabreg-webfont.eot?&1406117054#iefix') format('embedded-opentype'), url('../fonts/colabreg-webfont.woff?1406117054') format('woff'), url('../fonts/colabreg-webfont.ttf?1406117054') format('truetype'), url('../fonts/colabreg-webfont.svg?1406117054') format('svg');
+  src: url('../fonts/colabreg-webfont.eot');
+  src: url('../fonts/colabreg-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/colabreg-webfont.woff') format('woff'), url('../fonts/colabreg-webfont.ttf') format('truetype'), url('../fonts/colabreg-webfont.svg') format('svg');
 }
+
 @font-face {
   font-family: "colabthin";
-  src: url('../fonts/colabthi-webfont.eot?1406117054');
-  src: url('../fonts/colabthi-webfont.eot?&1406117054#iefix') format('embedded-opentype'), url('../fonts/colabthi-webfont.woff?1406117054') format('woff'), url('../fonts/colabthi-webfont.ttf?1406117054') format('truetype'), url('../fonts/colabthi-webfont.svg?1406117054') format('svg');
+  src: url('../fonts/colabthi-webfont.eot');
+  src: url('../fonts/colabthi-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/colabthi-webfont.woff') format('woff'), url('../fonts/colabthi-webfont.ttf') format('truetype'), url('../fonts/colabthi-webfont.svg') format('svg');
 }
+
 @font-face {
   font-family: "colablight";
-  src: url('../fonts/colablig-webfont.eot?1406117054');
-  src: url('../fonts/colablig-webfont.eot?&1406117054#iefix') format('embedded-opentype'), url('../fonts/colablig-webfont.woff?1406117054') format('woff'), url('../fonts/colablig-webfont.ttf?1406117054') format('truetype'), url('../fonts/colablig-webfont.svg?1406117054') format('svg');
+  src: url('../fonts/colablig-webfont.eot');
+  src: url('../fonts/colablig-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/colablig-webfont.woff') format('woff'), url('../fonts/colablig-webfont.ttf') format('truetype'), url('../fonts/colablig-webfont.svg') format('svg');
 }
+
 @font-face {
   font-family: "colabmed";
-  src: url('../fonts/colabmed-webfont.eot?1406117054');
-  src: url('../fonts/colabmed-webfont.eot?&1406117054#iefix') format('embedded-opentype'), url('../fonts/colabmed-webfont.woff?1406117054') format('woff'), url('../fonts/colabmed-webfont.ttf?1406117054') format('truetype'), url('../fonts/colabmed-webfont.svg?1406117054') format('svg');
+  src: url('../fonts/colabmed-webfont.eot');
+  src: url('../fonts/colabmed-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/colabmed-webfont.woff') format('woff'), url('../fonts/colabmed-webfont.ttf') format('truetype'), url('../fonts/colabmed-webfont.svg') format('svg');
 }
+
 @font-face {
   font-family: "colabbol";
-  src: url('../fonts/colabbol-webfont.eot?1406117054');
-  src: url('../fonts/colabbol-webfont.eot?&1406117054#iefix') format('embedded-opentype'), url('../fonts/colabbol-webfont.woff?1406117054') format('woff'), url('../fonts/colabbol-webfont.ttf?1406117054') format('truetype'), url('../fonts/colabbol-webfont.svg?1406117054') format('svg');
+  src: url('../fonts/colabbol-webfont.eot');
+  src: url('../fonts/colabbol-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/colabbol-webfont.woff') format('woff'), url('../fonts/colabbol-webfont.ttf') format('truetype'), url('../fonts/colabbol-webfont.svg') format('svg');
 }
+
 @font-face {
   font-family: "flare";
-  src: url('../fonts/flare-light-gothic-webfont.eot?1406117054');
-  src: url('../fonts/flare-light-gothic-webfont.eot?&1406117054#iefix') format('embedded-opentype'), url('../fonts/flare-light-gothic-webfont.woff?1406117054') format('woff'), url('../fonts/flare-light-gothic-webfont.ttf?1406117054') format('truetype'), url('../fonts/flare-light-gothic-webfont.svg?1406117054') format('svg');
+  src: url('../fonts/flare-light-gothic-webfont.eot');
+  src: url('../fonts/flare-light-gothic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/flare-light-gothic-webfont.woff') format('woff'), url('../fonts/flare-light-gothic-webfont.ttf') format('truetype'), url('../fonts/flare-light-gothic-webfont.svg') format('svg');
 }
+
 @font-face {
   font-family: "frankgoth";
-  src: url('../fonts/franklingothic-book-webfont.eot?1406117054');
-  src: url('../fonts/franklingothic-book-webfont.eot?&1406117054#iefix') format('embedded-opentype'), url('../fonts/franklingothic-book-webfont.woff?1406117054') format('woff'), url('../fonts/franklingothic-book-webfont.ttf?1406117054') format('truetype'), url('../fonts/franklingothic-book-webfont.svg?1406117054') format('svg');
+  src: url('../fonts/franklingothic-book-webfont.eot');
+  src: url('../fonts/franklingothic-book-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/franklingothic-book-webfont.woff') format('woff'), url('../fonts/franklingothic-book-webfont.ttf') format('truetype'), url('../fonts/franklingothic-book-webfont.svg') format('svg');
 }
+
 @font-face {
   font-family: "contrareg";
-  src: url('../fonts/contra__-webfont.eot?1406117054');
-  src: url('../fonts/contra__-webfont.eot?&1406117054#iefix') format('embedded-opentype'), url('../fonts/contra__-webfont.woff?1406117054') format('woff'), url('../fonts/contra__-webfont.ttf?1406117054') format('truetype'), url('../fonts/contra__-webfont.svg?1406117054') format('svg');
+  src: url('../fonts/contra__-webfont.eot');
+  src: url('../fonts/contra__-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/contra__-webfont.woff') format('woff'), url('../fonts/contra__-webfont.ttf') format('truetype'), url('../fonts/contra__-webfont.svg') format('svg');
 }
+
 @font-face {
   font-family: "contrait";
-  src: url('../fonts/contrai_-webfont.eot?1406117054');
-  src: url('../fonts/contrai_-webfont.eot?&1406117054#iefix') format('embedded-opentype'), url('../fonts/contrai_-webfont.woff?1406117054') format('woff'), url('../fonts/contrai_-webfont.ttf?1406117054') format('truetype'), url('../fonts/contrai_-webfont.svg?1406117054') format('svg');
+  src: url('../fonts/contrai_-webfont.eot');
+  src: url('../fonts/contrai_-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/contrai_-webfont.woff') format('woff'), url('../fonts/contrai_-webfont.ttf') format('truetype'), url('../fonts/contrai_-webfont.svg') format('svg');
 }
+
 @font-face {
   font-family: "chunk";
-  src: url('../fonts/chunkfive-webfont.eot?1406117054');
-  src: url('../fonts/chunkfive-webfont.eot?&1406117054#iefix') format('embedded-opentype'), url('../fonts/chunkfive-webfont.woff?1406117054') format('woff'), url('../fonts/chunkfive-webfont.ttf?1406117054') format('truetype'), url('../fonts/chunkfive-webfont.svg?1406117054') format('svg');
+  src: url('../fonts/chunkfive-webfont.eot');
+  src: url('../fonts/chunkfive-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/chunkfive-webfont.woff') format('woff'), url('../fonts/chunkfive-webfont.ttf') format('truetype'), url('../fonts/chunkfive-webfont.svg') format('svg');
 }
+
 /* line 26, ../sass/screen.scss */
 * {
   padding: 0;
@@ -146,7 +160,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-sizing: border-box;
 }
 
-/* line 34, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 html,
 body {
   padding: 0;
@@ -160,7 +174,7 @@ body {
   font-size: 62.5%;
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 h1,
 h2,
 h3 {
@@ -173,7 +187,7 @@ h3 {
   max-width: 74%;
   margin: 0 auto;
 }
-/* line 4, ../sass/_mixins.scss */
+/* line 5, ../sass/_mixins.scss */
 .large_container .clearfix:before,
 .large_container .clearfix:after {
   content: " ";
@@ -193,7 +207,7 @@ h3 {
   max-width: 93%;
   margin: 0 auto;
 }
-/* line 4, ../sass/_mixins.scss */
+/* line 5, ../sass/_mixins.scss */
 .main_container .clearfix:before,
 .main_container .clearfix:after {
   content: " ";
@@ -212,7 +226,7 @@ h3 {
 .inner_container {
   width: 67%;
 }
-/* line 4, ../sass/_mixins.scss */
+/* line 5, ../sass/_mixins.scss */
 .inner_container .clearfix:before,
 .inner_container .clearfix:after {
   content: " ";
@@ -232,7 +246,7 @@ h3 {
   width: 85%;
   margin: 0 auto;
 }
-/* line 4, ../sass/_mixins.scss */
+/* line 5, ../sass/_mixins.scss */
 .small_inner_container .clearfix:before,
 .small_inner_container .clearfix:after {
   content: " ";
@@ -253,7 +267,7 @@ h3 {
   margin: 0 auto;
   position: relative;
 }
-/* line 4, ../sass/_mixins.scss */
+/* line 5, ../sass/_mixins.scss */
 .nine_sixty .clearfix:before,
 .nine_sixty .clearfix:after {
   content: " ";
@@ -292,7 +306,7 @@ h3 {
 .header_section {
   position: relative;
 }
-/* line 4, ../sass/_mixins.scss */
+/* line 5, ../sass/_mixins.scss */
 .header_section .clearfix:before,
 .header_section .clearfix:after {
   content: " ";
@@ -371,7 +385,7 @@ h3 {
   margin-top: 60px;
   position: relative;
 }
-/* line 4, ../sass/_mixins.scss */
+/* line 5, ../sass/_mixins.scss */
 .section_one .clearfix:before,
 .section_one .clearfix:after {
   content: " ";
@@ -417,7 +431,7 @@ h3 {
 .section_two {
   text-align: center;
 }
-/* line 4, ../sass/_mixins.scss */
+/* line 5, ../sass/_mixins.scss */
 .section_two .clearfix:before,
 .section_two .clearfix:after {
   content: " ";
@@ -444,7 +458,7 @@ h3 {
   margin: 40px auto;
   text-align: center;
 }
-/* line 4, ../sass/_mixins.scss */
+/* line 5, ../sass/_mixins.scss */
 .section_three .clearfix:before,
 .section_three .clearfix:after {
   content: " ";
@@ -489,7 +503,7 @@ h3 {
   margin: 40px auto;
   text-align: center;
 }
-/* line 4, ../sass/_mixins.scss */
+/* line 5, ../sass/_mixins.scss */
 .section_four .clearfix:before,
 .section_four .clearfix:after {
   content: " ";
@@ -517,7 +531,7 @@ h3 {
   color: #828181;
   font-family: 'colablight';
 }
-/* line 4, ../sass/_mixins.scss */
+/* line 5, ../sass/_mixins.scss */
 .section_five .clearfix:before,
 .section_five .clearfix:after {
   content: " ";
@@ -546,7 +560,7 @@ h3 {
   color: #5f7390;
   font-size: 1.5rem;
 }
-/* line 4, ../sass/_mixins.scss */
+/* line 5, ../sass/_mixins.scss */
 .section_five .small_inner_container .clearfix:before,
 .section_five .small_inner_container .clearfix:after {
   content: " ";
@@ -569,7 +583,7 @@ h3 {
 .section_five .small_inner_container .halfsies .section_five_play {
   margin-top: 40px;
 }
-/* line 4, ../sass/_mixins.scss */
+/* line 5, ../sass/_mixins.scss */
 .section_five .small_inner_container .halfsies .section_five_play .clearfix:before,
 .section_five .small_inner_container .halfsies .section_five_play .clearfix:after {
   content: " ";
@@ -606,7 +620,7 @@ h3 {
 .section_five .section_five_bottom {
   margin: 30px 0;
 }
-/* line 4, ../sass/_mixins.scss */
+/* line 5, ../sass/_mixins.scss */
 .section_five .section_five_bottom .clearfix:before,
 .section_five .section_five_bottom .clearfix:after {
   content: " ";
@@ -626,7 +640,7 @@ h3 {
   padding: 10px 0;
   border-top: 1px solid #d7d8da;
 }
-/* line 4, ../sass/_mixins.scss */
+/* line 5, ../sass/_mixins.scss */
 .section_five .section_five_bottom nav ul li .clearfix:before,
 .section_five .section_five_bottom nav ul li .clearfix:after {
   content: " ";
@@ -667,7 +681,7 @@ h3 {
   /* IE6-8 fallback on horizontal gradient */
   padding-bottom: 20px;
 }
-/* line 4, ../sass/_mixins.scss */
+/* line 5, ../sass/_mixins.scss */
 .footer_section .clearfix:before,
 .footer_section .clearfix:after {
   content: " ";
@@ -703,7 +717,7 @@ h3 {
   color: white;
   float: right;
 }
-/* line 4, ../sass/_mixins.scss */
+/* line 5, ../sass/_mixins.scss */
 .footer_section .news_section .clearfix:before,
 .footer_section .news_section .clearfix:after {
   content: " ";
@@ -723,7 +737,7 @@ h3 {
   float: left;
   float: left;
 }
-/* line 4, ../sass/_mixins.scss */
+/* line 5, ../sass/_mixins.scss */
 .footer_section .news_section .newsletter .clearfix:before,
 .footer_section .news_section .newsletter .clearfix:after {
   content: " ";
@@ -758,7 +772,7 @@ h3 {
   float: right;
   width: 43%;
 }
-/* line 4, ../sass/_mixins.scss */
+/* line 5, ../sass/_mixins.scss */
 .footer_section .contact_form .clearfix:before,
 .footer_section .contact_form .clearfix:after {
   content: " ";
@@ -783,7 +797,7 @@ h3 {
 .footer_section .contact_form .left_contact {
   float: left;
 }
-/* line 4, ../sass/_mixins.scss */
+/* line 5, ../sass/_mixins.scss */
 .footer_section .contact_form .left_contact .clearfix:before,
 .footer_section .contact_form .left_contact .clearfix:after {
   content: " ";
@@ -972,7 +986,7 @@ h3 {
   right: 0;
 }
 
-/* line 532, ../sass/screen.scss */
+/* line 533, ../sass/screen.scss */
 #left_arrow1,
 #right_arrow1 {
   position: absolute;
